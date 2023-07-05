@@ -14,7 +14,7 @@ public class MyContext : DbContext
         var instance = "mssqllocaldb";
         var database = "ECommDB";
         var authentication = "Integrated Security = true";
-        //var authentication = "user = sa; password = abc1234";
+        //var authentication = "user = sa; password = abc1234"
 
         var conString = $"Data Source={server}\\{instance}; Initial Catalog={database};{authentication}";
 
