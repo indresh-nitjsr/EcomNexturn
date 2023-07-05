@@ -1,0 +1,29 @@
+﻿@page
+@model WebApp.Pages.RegisterModel
+@{
+}
+<h1>Registration Form</h1>
+
+<form method="post">
+    <div class="form-group w-25">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="Name" />
+    </div>
+    <div class="form-group w-25">
+        <label for="email">Email:</label>
+        <input type="text" class="form-control" id="email" name="Email" />
+    </div>
+    <div class="form-group w-25">
+        <label for="phone">Phone:</label>
+        <input type="text" class="form-control" id="phone" name="Phone" />
+    </div>
+    <div class="form-group w-25">
+        <label for="city">City:</label>
+        <input type="text" class="form-control" id="city" name="City" />
+    </div>
+    <div class="form-group w-25">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" name="Password" />
+    </div><br />
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>

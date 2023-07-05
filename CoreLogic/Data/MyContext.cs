@@ -6,6 +6,7 @@ namespace CoreLogic.Data;
 public class MyContext : DbContext
 {
     public DbSet<Product> Products { get; set; }
+    public DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     {
@@ -13,7 +14,7 @@ public class MyContext : DbContext
         var instance = "mssqllocaldb";
         var database = "ECommDB";
         var authentication = "Integrated Security = true";
-        //var authentication = "user = sa; password = abc1234";
+        //var authentication = "user = sa; password = abc1234"
 
         var conString = $"Data Source={server}\\{instance}; Initial Catalog={database};{authentication}";
 
